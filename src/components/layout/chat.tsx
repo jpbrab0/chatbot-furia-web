@@ -16,7 +16,7 @@ export const Chat: React.FC = () => {
   const [input, setInput] = useState('');
   const [disabled, setDisabled] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(false)
-  const messagesEndRef = useRef(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const defaultPrompts = (type: IPromptType) => {
@@ -28,8 +28,8 @@ export const Chat: React.FC = () => {
     handleSend(prompts[type])
   }
 
-  const handleSend = async (text?) => {
-    if (text instanceof Object || text === "" && input === "") return;
+  const handleSend = async (text?: string) => {
+    if (text === "" && input === "") return;
 
     const prompt = text || input.trim();
     if (!prompt) return;
@@ -65,7 +65,7 @@ export const Chat: React.FC = () => {
 
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSend();
