@@ -43,7 +43,7 @@ gh repo clone jpbrab0/chatbot-furia-web
 - `npm i`
 
 2. Adicione a URL da api no .env
-- `API_URI=<URL DA API(rodar localmente https://github.com/jpbrab0/chatbot-furia) ou http:18.117.233.226/>`
+- `API_URI=<URL DA API(rodar localmente https://github.com/jpbrab0/chatbot-furia) http://127.0.0.1/ ou https://furiosoai.jpres.dev/>`
 
 3. Renomeie .exemple.env to .env
 - `mv .exemple.env .env`
