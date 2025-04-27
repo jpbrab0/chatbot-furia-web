@@ -148,7 +148,7 @@ export const Chat: React.FC = () => {
             <ArrowUp color="black" />
           </button>
         </div>
-        <p className="mt-20 mb-10">Feito por João Pedro Resende - <a href="https://github.com/jpbrab0" target="_blank" className="font-bold text-yellow-300">@jpbrab0</a></p>
+        <p className="mt-10 mb-10">Feito por João Pedro Resende - <a href="https://github.com/jpbrab0" target="_blank" className="font-bold text-yellow-300">@jpbrab0</a></p>
       </div>
     </div>
   );
