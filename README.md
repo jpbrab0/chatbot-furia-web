@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# FURIOSO AI WEB
+Chatbot da [FURIA](https://furia.gg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre o projeto 📜
+No Chatbot web você consegue
+- Fazer perguntas para o Furioso AI sobre a FURIA
+  - História, Lineups, Founders, Titulos, etc...
 
-Currently, two official plugins are available:
+Foi construido com:
+- React.js
+- TypeScript
+- Vite
+- Tailwind CSS
+- Shadcn 
+- Lucide Icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalando o projeto 📦
+Pré-requisitos:
+- [Node.js](https://nodejs.org/en/)
 
-## Expanding the ESLint configuration
+Clone o repositório para a sua maquina local:
+Com Https:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/jpbrab0/chatbot-furia-web.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Com SSH:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+git clone git@github.com:jpbrab0/chatbot-furia-web.git
 ```
+
+Com Github CLI:
+
+```bash
+gh repo clone jpbrab0/chatbot-furia-web
+```
+
+## Rodando o projeto 🏃
+1. Instale todas as dependencias com o NPM:
+
+- `npm i`
+
+2. Adicione a URL da api no .env
+- `API_URI=<URL DA API(rodar localmente https://github.com/jpbrab0/chatbot-furia) ou http:18.117.233.226/>`
+
+3. Renomeie .exemple.env to .env
+- `mv .exemple.env .env`
+
+4. Inicie o server:
+
+- `npm run dev`
+
+5. Acesse localmente:
+- `http://localhost:5173`
+
+Feito por [jpbrab0](https://github.com/jpbrab0)
